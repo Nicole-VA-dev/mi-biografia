@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-PR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Nicole Vera</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    
+    
+    <!-- Menú de navegación principal -->
+    
+    <nav class="navbar">
+    <div class="nav-brand">Nicole Vera</div>
+    <ul class="nav-links">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="biografia.html">Biografía</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><button id="theme-toggle" class="theme-btn">🌙 Modo Oscuro</button></li>
+        </ul>
+    </nav>
+    
+    <header>
+    <h1>Contáctame a través de este formulario</h1>
+    </header>
+    
+    <main>
+    <div class="card form-container">
+        <form action="https://formsubmit.co/nicole.m.vera@icloud.com" method="post">
+        <div class="form-group">
+            <label for="from">From:</label>
+            <input type="email" id="from" name="from" placeholder="Tu correo electrónico" required>
+            </div>
+        
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+            </div>
+        
+        <div class="form-group">
+            <label for="to">To:</label>
+            <input type="email" id="to" name="to" value="nicole.m.vera@icloud.com" readonly>
+            </div>
+        
+        <div class="form-group">
+            <label for="cc">CC:</label>
+            <input type="email" id="cc" name="cc" placeholder="Opcional">
+            </div>
+        
+        <div class="form-group">
+            <label for="bcc">BCC:</label>
+            <input type="email" id="bcc" name="bcc" placeholder="Opcional">
+            </div>
+        
+        <div class="form-group-textarea">
+            <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+        
+        <div class="btn-group">
+            <a href="biografia.html" class="btn btn-secondary">Volver a mi biografía</a>
+            <button type="submit" class="btn">Enviar este formulario</button>
+            </div>
+        </form>
+        </div>
+    </main>
+    
+    <footer>
+    <p>&copy; 2026 Todos los derechos reservados.</p>
+    <p class="footer-author">Hecho por Nicole Vera.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    </body>
+</html>
